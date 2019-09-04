@@ -1,0 +1,153 @@
+@charset "utf-8";
+@import url(https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css);
+
+/* global setting */
+html,body{
+  margin: 0;
+  padding: 0;
+  background-color: #383838;
+  color: white;
+}
+
+html, body, pre{
+  font-family: 'Nanum Square', 'NanumSquare', sans-serif;
+}
+
+.container{
+  /*width: 1000px;*/
+  /*padding-left: 0;*/
+  /*padding-right: 0;*/
+}
+
+
+/* Header Part */
+header{
+  padding: 20px 0 !important;
+}
+
+header h1.logo{
+  margin: 0;
+  padding: 0;
+  width: 260px;
+  height: 45px;
+  background-image: url('logo.png');
+  background-size: 260px auto;
+}
+
+header form input,
+header form button{
+  font-size: 16px;
+  border: none;
+  outline: none;
+  padding: 6px 10px 4px;
+  vertical-align: middle;
+  color: white;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 3px;
+}
+
+header form input{
+  width: 300px;
+}
+header form input::placeholder { opacity: 0.6; }
+
+header form button{
+  transition: all 0.5s;
+}
+header form button:hover{ background-color: rgba(255, 255, 255, 0.3); }
+
+
+#loading-bar .bar{
+  background-color: #138891;
+  top: 75px;
+  position: absolute;
+}
+
+
+/* Footer Part */
+footer{
+  background-color: #4c4c4c;
+  padding: 20px 0;
+}
+
+footer p{
+  color: #c0c0c0;
+  font-size: 12px;
+  line-height: 160%;
+}
+
+
+/* Home section */
+.home{
+  text-align: center;
+  padding: 150px 0;
+}
+
+.home h2{
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 1.3em;
+}
+
+.home ul{
+  list-style: none;
+  margin: 70px 0 0;
+  padding: 10px 0 10px 10px;
+}
+
+
+/* Result Section */
+.result{
+  padding: 20px 0;
+}
+
+.result h2{
+  font-size: 24px;
+  font-weight: 300;
+  margin-top: 0;
+}
+
+.result h3{
+  font-size: 20px;
+  font-weight: 300;
+  margin-top: 35px;
+}
+
+.result h3 i{
+  margin: 2px 6px 0 0;
+  font-size: 18px;
+}
+
+.result h4{
+  font-size: 16px;
+  font-weight: 300;
+  margin-top: 9px;
+}
+
+
+.result section.related-topics ul{
+  list-style: none;
+  margin: 0;
+  padding: 10px 0 10px 90px;
+}
+
+posneg-chart .axis path,
+posneg-chart .axis line{ stroke: rgba(255, 255, 255, 0.5) }
+posneg-chart .axis text{ fill: rgba(255, 255, 255, 0.5) }
+posneg-chart .center.axis line{ stroke: white }
+
+donut-chart text.label{
+  fill: rgba(255, 255, 255, 0.8);
+  font-weight: 300;
+  font-size: 14px;
+}
+
+donut-chart text.label.sub{ font-size: 12px; }
+
+
+.news-articles li{
+  padding-top: 5px;
+}
+.news-articles a{
+  color: #ccc;
+}

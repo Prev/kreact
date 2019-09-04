@@ -1,0 +1,18 @@
+version: '3'
+
+services:
+  app:
+    build: ./app
+    ports:
+      - 8080:80
+    links:
+      - redis
+    environment:
+      REDIS_HOST: redis
+
+  redis:
+    image: redis
+    command: ["redis-server", "--appendonly", "yes"]
+    hostname: redis
+    volumes:
+      - ./redis-data:/data
