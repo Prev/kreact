@@ -1,6 +1,6 @@
 # K-React: Korea Reaction Anaysis Service from Internet News
 
-![screenshot](./images/screenshot.png)
+![screenshot - North Korea](./images/screenshot1.png)
 
 Graduation Project on Hanyang University Computer Science Department, B.S.
 with [Taehwa Jung](https://github.com/thjeong917) (2018)
@@ -52,4 +52,30 @@ $ docker-compose up
 Then you can access app on [http://localhost:8080](http://localhost:8080) (You can change port on `docker-compose.yml`).
 
 > It takes time to load data from file to memory on `redis`, so you might wait for some time.)
+
+
+
+## Use cases
+
+Get public opinion of policies goverment excuting, or analyze postivie & negative point(keywords) of the company.
+
+Blue means positive, and red means negative in both bar-chart and donut graph. Querying multiple keywords is available, analyzing common articles and reactions of the keywords.
+
+**BTS**
+
+![screenshot - BTS](./images/screenshot2.png)
+
+**North Korea & Trump**
+
+![screenshot3](./images/screenshot3.png)
+
+**Economy Policies**
+
+![screenshot4](./images/screenshot4.png)
+
+## Appendix
+
+Got 1st award and award of popularity(by public voting) on Graduation Project Exhibition, Hanyang University Computer Science Department, Nov 2018.
+
+![got awarded](./images/awarded.jpg)
 
